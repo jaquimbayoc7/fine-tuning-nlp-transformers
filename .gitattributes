@@ -1,0 +1,25 @@
+# Configuración de Git para el proyecto
+
+# Manejo de finales de línea
+* text=auto
+*.py text eol=lf
+*.ipynb text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+
+# Archivos binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.pt binary
+*.h5 binary
+*.bin binary
+*.safetensors binary
+
+# Notebooks Jupyter (diff especial)
+*.ipynb diff=jupyternotebook
+*.ipynb merge=jupyternotebook

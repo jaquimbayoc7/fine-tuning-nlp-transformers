@@ -1,0 +1,66 @@
+{
+  "dataset": "Sarcastic_spanish_dataset (Ernesto-1997)",
+  "task": "binary_classification",
+  "num_classes": 2,
+  "classes": [
+    "0",
+    "1"
+  ],
+  "dataset_size": {
+    "train": 2292,
+    "validation": 2291,
+    "test": 2292,
+    "total": 6875
+  },
+  "hyperparameters": {
+    "max_length": 128,
+    "batch_size": 16,
+    "learning_rate": 2e-05,
+    "num_epochs": 5,
+    "warmup_steps": 500,
+    "weight_decay": 0.01
+  },
+  "models": {
+    "beto": {
+      "model_name": "dccuchile/bert-base-spanish-wwm-cased",
+      "hub_name": "Lucyan85/beto-sarcasmo-sentiment",
+      "train": {
+        "runtime": 121.4778,
+        "loss": 0.36400282987289956
+      },
+      "validation": {
+        "accuracy": 0.8738542121344391,
+        "f1": 0.836815358554489,
+        "loss": 1.1779677867889404
+      },
+      "test": {
+        "accuracy": 0.9965095986038395,
+        "f1": 0.9956188389923329,
+        "loss": 0.02005992829799652
+      }
+    },
+    "xlm_roberta": {
+      "model_name": "xlm-roberta-base",
+      "hub_name": "Lucyan85/xlmr-sarcasmo-sentiment",
+      "train": {
+        "runtime": 235.5011,
+        "loss": 0.7863051056861877
+      },
+      "validation": {
+        "accuracy": 0.8476647752073331,
+        "f1": 0.8009127210496292,
+        "loss": 0.8402280807495117
+      },
+      "test": {
+        "accuracy": 0.9524432809773123,
+        "f1": 0.9391401451702959,
+        "loss": 0.29494696855545044
+      }
+    }
+  },
+  "best_model": {
+    "name": "BETO",
+    "test_f1": 0.9956188389923329,
+    "test_accuracy": 0.9965095986038395
+  }
+}

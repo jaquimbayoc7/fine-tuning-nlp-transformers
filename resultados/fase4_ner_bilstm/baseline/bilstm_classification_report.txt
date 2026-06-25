@@ -1,0 +1,25 @@
+RESULTADOS BiLSTM NER - CoNLL-2002
+======================================================================
+
+Modelo: BiLSTM
+Dataset: CoNLL-2002 Spanish NER
+Parámetros: 6,497,161
+
+TEST SET METRICS:
+  F1-Score: 0.5197
+  Precision: 0.5278
+  Recall: 0.5118
+  Loss: 0.1547
+
+CLASSIFICATION REPORT:
+======================================================================
+              precision    recall  f1-score   support
+
+         LOC     0.4195    0.1188    0.1852      1052
+        MISC     0.2361    0.3769    0.2903       337
+         ORG     0.5769    0.6903    0.6285      1385
+         PER     0.6497    0.8099    0.7210       710
+
+   micro avg     0.5278    0.5118    0.5197      3484
+   macro avg     0.4705    0.4989    0.4563      3484
+weighted avg     0.5113    0.5118    0.4808      3484

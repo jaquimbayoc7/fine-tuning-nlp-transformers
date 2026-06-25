@@ -1,0 +1,134 @@
+Carga el dataset TASS para análisis e sentimientos
+Cargar el dataset TASS de manera local y mostrar la distribución de etiquetas para los
+tres conjuntos (entrenamiento, validación y prueba) y traer de Hugging Face el dataset Sarcasmo.
+0.25 pts
+100%
+0.2 pts
+80%
+0.15 pts
+60%
+0.1 pts
+40%
+0 pts
+0%
+0.25 pts
+Este criterio depende de una competencia de aprendizajeImplementar el ajuste o fine tuning para los modelos de clasisifcación
+Sobre el dataset TASS realizar el finetuning de los modelos Xlnet y XML-Roberta-large para la clasificación de tres sentimientos (positivo, neutro negativo). Para el dataset Sarcasmo afinar con los modelo BETO y XML-Roberta-large para la clasificacón dedos sentimientos de sarcasmo y no sarcasmo.
+0.75 pts
+100%
+0.6 pts
+80%
+0.45 pts
+60%
+0.3 pts
+40%
+0 pts
+0%
+0.75 pts
+Este criterio depende de una competencia de aprendizajeImplementar las métricas de desempeño Recall, Precision y F1-score para los dos datasets afinados
+Implementar las métricas de desempeño tomando batch size de 8,16 y 32 entre 6 y 10 épocas
+0.5 pts
+100%
+0.4 pts
+80%
+0.3 pts
+60%
+0.2 pts
+40%
+0 pts
+0%
+0.5 pts
+Este criterio depende de una competencia de aprendizajeImplementar un script para probar los modelos publicados en Hugging Face sobre los dos datasets
+Usando los mejores modelos publicados en Hugging Face probar en un script varios ejemplos para los dos datasets.
+0.5 pts
+100%
+0.4 pts
+80%
+0.3 pts
+60%
+0.2 pts
+40%
+0 pts
+0%
+0.5 pts
+Este criterio depende de una competencia de aprendizajeRealizar el análisis de resultados para los dos afinamientos
+¿Por qué los rendimientos sobre TASS son menores que los obtenidos por el dataset
+Sarcasmo? ¿Qué papel juegan el número de clases en ambos datasets?
+¿Analizar y comprar el desempeño de los LLMs; Xlnet y XML-Roberta-large además de
+BETO frente a XML-Roberta-large sobre el dataset Sarcasmo?
+0.5 pts
+100%
+0.4 pts
+80%
+0.3 pts
+60%
+0.2 pts
+40%
+0 pts
+0%
+0.5 pts
+Este criterio depende de una competencia de aprendizajeImplementar el entrenamiento de conll2002 usado LSTMs para resolver la tarea de NER
+Entrenar dos modelos de BiLSTMs para resolver la tarea de NER sobre el dataset conll2002. el objetivo es mejorar el f1-score del modelo base Bilstm que es de 64.3%
+0.75 pts
+100%
+0.6 pts
+80%
+0.45 pts
+60%
+0.3 pts
+40%
+0 pts
+0%
+0.75 pts
+Este criterio depende de una competencia de aprendizajeImplementar el afinamiento de los modelos BETO y XML-Roberta sobre el dataset prostata,
+Implementar el afinamiento de los modelos BETO y XML-Roberta sobre el dataset prostata, teniendo en cuenta la parametrización definida para un LLMs. Probar batch sizes de 8, 16 y 32 y en el caso de que sea necesario usan cuantificación de Xlora.
+0.75 pts
+100%
+0.6 pts
+80%
+0.45 pts
+60%
+0.3 pts
+40%
+0 pts
+0%
+0.75 pts
+Este criterio depende de una competencia de aprendizajeSubir los mejores modelos afinados a Hugging Face
+Subir los mejores modelos entrenados a Hugging Face e implementar un script para probarlos con diferentes textos relacionados con el tema de cáncer de próstata
+0.25 pts
+100%
+0.2 pts
+80%
+0.15 pts
+60%
+0.1 pts
+40%
+0 pts
+0%
+0.25 pts
+Este criterio depende de una competencia de aprendizajeImplementar las métricas de desempeño Recall, Precision y F1-score para el afinamiento de los modelos
+Implementar las métricas de desempeño tomando batch size de 8,16 y 32 entre 6 y 10 épocas sobre el dataset de prostata
+0.25 pts
+100%
+0.2 pts
+80%
+0.15 pts
+60%
+0.1 pts
+40%
+0 pts
+0%
+0.25 pts
+Este criterio depende de una competencia de aprendizajeImplementar un script para clasificación de NER usando prompt engineering
+Usando los LLMs generativos como Mistral, Llama, Gemma y DeepSeek resolver la tarea de NER biomédico
+0.5 pts
+100%
+0.4 pts
+80%
+0.3 pts
+60%
+0.2 pts
+40%
+0 pts
+0%
+0.5 pts

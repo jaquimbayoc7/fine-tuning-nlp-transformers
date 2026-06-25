@@ -1,0 +1,64 @@
+# Token de HuggingFace (¡NO SUBIR A GIT!)
+hf_token.txt
+*.token
+.env
+
+# Modelos guardados (muy grandes para Git)
+modelos/*.h5
+modelos/*.pt
+modelos/*.bin
+modelos/*.safetensors
+modelos/checkpoint-*/
+
+# Embeddings (muy grandes)
+embeddings/
+*.vec
+*.bin
+
+# Checkpoints de entrenamiento
+checkpoints/
+runs/
+wandb/
+
+# Cache de datasets
+.cache/
+datasets-cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Resultados temporales
+resultados/temp/
+*.tmp
+
+# Archivos comprimidos (datasets ya están descomprimidos)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Carpetas de ayuda temporal
+pln-coding-ayudas/
+pln-coding-ayudas.zip

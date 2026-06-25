@@ -1,0 +1,34 @@
+MODELO 2: BiLSTM + CRF + CNN + FastText
+======================================================================
+
+Dataset: CoNLL-2002 Spanish NER
+Baseline F1: 64.3%
+Parámetros totales: 10,044,304
+Parámetros entrenables: 2,930,704
+Tiempo de entrenamiento: 7.97 minutos
+
+COMPONENTES:
+  - FastText: 300d (frozen)
+  - CharCNN: 90d (kernels: [3, 4, 5])
+  - Input total: 390d
+  - BiLSTM: 256 × 2 capas × 2 direcciones
+  - CRF: coherencia de secuencias
+
+TEST SET METRICS:
+  F1-Score: 0.7200 (72.00%)
+  Precision: 0.7419 (74.19%)
+  Recall: 0.6995 (69.95%)
+  Mejora vs baseline: +7.70 puntos
+
+CLASSIFICATION REPORT:
+======================================================================
+              precision    recall  f1-score   support
+
+         LOC     0.8119    0.6977    0.7505      1052
+        MISC     0.5327    0.3145    0.3955       337
+         ORG     0.7073    0.7119    0.7096      1385
+         PER     0.7754    0.8606    0.8158       710
+
+   micro avg     0.7419    0.6995    0.7200      3484
+   macro avg     0.7068    0.6462    0.6678      3484
+weighted avg     0.7359    0.6995    0.7132      3484

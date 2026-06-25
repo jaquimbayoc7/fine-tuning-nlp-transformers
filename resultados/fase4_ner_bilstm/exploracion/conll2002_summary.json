@@ -1,0 +1,36 @@
+{
+  "dataset": "CoNLL-2002 Spanish NER",
+  "total_sentences": 11755,
+  "splits": {
+    "train": 8323,
+    "valid": 1915,
+    "test": 1517
+  },
+  "entity_types": [
+    "LOC",
+    "MISC",
+    "ORG",
+    "PER"
+  ],
+  "total_entities": 26706,
+  "entity_distribution": {
+    "LOC": 6981,
+    "MISC": 2957,
+    "ORG": 10490,
+    "PER": 6278
+  },
+  "sequence_stats": {
+    "min_length": 1,
+    "max_length": 1238,
+    "mean_length": 31.40544449170566,
+    "median_length": 34.0,
+    "p95_length": 62,
+    "p99_length": 76
+  },
+  "recommendations": {
+    "max_length": 62,
+    "reason": "Covers ~95% of sequences (62 tokens)",
+    "balanced": "No - LOC and PER are more frequent",
+    "class_weights": "Consider using class weights for MISC"
+  }
+}

@@ -1,0 +1,27 @@
+MODELO 1: BiLSTM + CRF + FastText
+======================================================================
+
+Dataset: CoNLL-2002 Spanish NER
+Baseline F1: 64.3%
+Parámetros totales: 9,838,594
+Parámetros entrenables: 2,724,994
+Tiempo de entrenamiento: 4.15 minutos
+
+TEST SET METRICS:
+  F1-Score: 0.6421 (64.21%)
+  Precision: 0.7138 (71.38%)
+  Recall: 0.5835 (58.35%)
+  Mejora vs baseline: -0.09 puntos
+
+CLASSIFICATION REPORT:
+======================================================================
+              precision    recall  f1-score   support
+
+         LOC     0.7815    0.6188    0.6907      1052
+        MISC     0.3379    0.1454    0.2033       337
+         ORG     0.6864    0.5704    0.6230      1385
+         PER     0.7552    0.7648    0.7600       710
+
+   micro avg     0.7138    0.5835    0.6421      3484
+   macro avg     0.6403    0.5249    0.5693      3484
+weighted avg     0.6954    0.5835    0.6308      3484

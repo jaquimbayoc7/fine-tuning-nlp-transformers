@@ -1,0 +1,72 @@
+{
+  "comparacion_general": [
+    {
+      "Tarea": "TASS (Sentimiento)",
+      "Modelo": "BETO",
+      "Num_Clases": 3,
+      "Test_Accuracy": 0.6532951289398281,
+      "Test_F1": 0.6454410037310078,
+      "Test_Loss": "N/A",
+      "Train_Time_s": "N/A"
+    },
+    {
+      "Tarea": "TASS (Sentimiento)",
+      "Modelo": "XLM-RoBERTa",
+      "Num_Clases": 3,
+      "Test_Accuracy": 0.648792468276709,
+      "Test_F1": 0.6440806501216078,
+      "Test_Loss": "N/A",
+      "Train_Time_s": "N/A"
+    },
+    {
+      "Tarea": "Sarcasmo",
+      "Modelo": "BETO",
+      "Num_Clases": 2,
+      "Test_Accuracy": 0.9965095986038395,
+      "Test_F1": 0.9956188389923329,
+      "Test_Loss": 0.02005992829799652,
+      "Train_Time_s": 121.4778
+    },
+    {
+      "Tarea": "Sarcasmo",
+      "Modelo": "XLM-RoBERTa",
+      "Num_Clases": 2,
+      "Test_Accuracy": 0.9524432809773123,
+      "Test_F1": 0.9391401451702959,
+      "Test_Loss": 0.29494696855545044,
+      "Train_Time_s": 235.5011
+    }
+  ],
+  "mejor_modelo_por_tarea": {
+    "tass": {
+      "modelo": "dccuchile/bert-base-spanish-wwm-cased",
+      "f1": 0.6454
+    },
+    "sarcasmo": {
+      "modelo": "BETO",
+      "f1": 0.9956188389923328
+    }
+  },
+  "robustez": {
+    "modelo_mas_robusto": "XLM-RoBERTa",
+    "beto_variacion": 0.3501778352613252,
+    "xlmr_variacion": 0.2950594950486881
+  },
+  "dificultad_tarea": {
+    "tarea_mas_dificil": "TASS",
+    "tass_f1_promedio": 0.6447608269263078,
+    "sarcasmo_f1_promedio": 0.9673794920813144
+  },
+  "impacto_num_clases": {
+    "mejora_promedio_f1": 0.32261866515500665,
+    "beto_diferencia": 0.3501778352613252,
+    "xlmr_diferencia": 0.2950594950486881
+  },
+  "eficiencia": {
+    "nota": "Solo datos de Sarcasmo disponibles (TASS no guardó tiempos)",
+    "modelo_mas_rapido": "BETO",
+    "beto_tiempo_sarcasmo_s": 121.4778,
+    "xlmr_tiempo_sarcasmo_s": 235.5011,
+    "xlmr_vs_beto_ratio": 1.9386348781423437
+  }
+}

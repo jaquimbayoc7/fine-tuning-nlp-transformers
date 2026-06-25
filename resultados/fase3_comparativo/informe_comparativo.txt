@@ -1,0 +1,26 @@
+INFORME COMPARATIVO: TASS vs SARCASMO
+======================================================================
+
+1. MEJOR MODELO POR TAREA:
+   - TASS: dccuchile/bert-base-spanish-wwm-cased (F1: 0.6454)
+   - Sarcasmo: BETO (F1: 0.9956)
+
+2. MODELO MÁS ROBUSTO:
+   - XLM-RoBERTa
+   - BETO variación: 0.3502
+   - XLM-RoBERTa variación: 0.2951
+
+3. TAREA MÁS DIFÍCIL:
+   - TASS
+   - TASS F1 promedio: 0.6448
+   - Sarcasmo F1 promedio: 0.9674
+
+4. IMPACTO DEL NÚMERO DE CLASES:
+   - Mejora promedio al reducir de 3 a 2 clases: +0.3226
+
+5. EFICIENCIA COMPUTACIONAL:
+   Nota: Solo datos de Sarcasmo disponibles
+   - Modelo más rápido en Sarcasmo: BETO
+   - BETO: 121.5s (2.02 min)
+   - XLM-RoBERTa: 235.5s (3.93 min)
+   - Ratio: XLM-RoBERTa es 1.94x más lento

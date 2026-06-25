@@ -1,0 +1,4 @@
+Conjunto,Oraciones,Tokens,Tokens únicos,Etiquetas únicas,Long. promedio,Long. mediana,Long. máxima,Long. mínima
+Entrenamiento,3106,67934,4604,21,21.871860914359303,15.0,172,2
+Validación,929,16803,2371,22,18.08719052744887,13.0,101,2
+Prueba,991,20861,2507,22,21.05045408678103,17.0,126,1
