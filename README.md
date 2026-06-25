@@ -9,7 +9,7 @@
 [![Completitud](https://img.shields.io/badge/Completitud-94.4%25-success?style=flat)](ESTADO_PROYECTO.md)
 
 **Procesamiento del Lenguaje Natural**  
-Maestría Virtual en Ingeniería de Sistemas y Computación  
+Maestría en Ciencias de la Computación para el Desarrollo de Apps Inteligentes  
 Universidad del Valle - 2026  
 Ing. Julian Andres Quimbayo Castro
 
@@ -412,14 +412,14 @@ Para fine-tuning y entrenamiento intensivo:
 
 ## 📄 Licencia
 
-Este proyecto es parte del trabajo académico de la Maestría en Ingeniería de Sistemas y Computación de la Universidad del Valle.
+Este proyecto es parte del trabajo académico de la Maestría en Ciencias de la Computación para el Desarrollo de Apps Inteligentes de la Universidad del Valle.
 
 ---
 
 ## 👤 Autor
 
 **Julian Andres Quimbayo Castro**  
-Maestría Virtual en Ingeniería de Sistemas y Computación  
+Maestría en Ciencias de la Computación para el Desarrollo de Apps Inteligentes  
 Universidad del Valle - 2026
 
 ---
