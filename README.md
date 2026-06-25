@@ -362,22 +362,6 @@ El enunciado original contemplaba modelos como Mistral-7B-Instruct-v0.2, Gemma-7
 
 ---
 
-## 📈 Progreso del Proyecto
-
-| Fase | Tarea | Estado | Puntos |
-|------|-------|--------|--------|
-| 1 | Fine-tuning TASS (BETO + XLM-R) | ✅ | 0.75 |
-| 2 | Fine-tuning Sarcasmo (BETO + XLM-R) | ✅ | 0.75 |
-| 3 | Análisis Comparativo | ✅ | 0.5 |
-| 4 | BiLSTM NER CoNLL-2002 | ✅ | 0.75 |
-| 5 | Probar modelos HuggingFace | ✅ | 0.5 |
-| 6 | Fine-tuning Próstata (BETO + XLM-R) | ✅ | 0.75 |
-| 7 | Publicar modelos Próstata en HuggingFace | ✅ | 0.25 |
-| 8 | NER con Prompt Engineering (Groq API) | ✅ | 0.25 |
-| **Total completado** | | | **4.5/4.5** ✅ |
-
----
-
 ## 💻 Ejecución de Notebooks
 
 ### Local (VS Code)
