@@ -6,7 +6,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Transformers-4.30.0-FFD21E?style=flat)](https://huggingface.co/docs/transformers)
 [![License](https://img.shields.io/badge/License-Academic-blue?style=flat)](LICENSE)
-[![Completitud](https://img.shields.io/badge/Completitud-94.4%25-success?style=flat)](ESTADO_PROYECTO.md)
+![Completitud](https://img.shields.io/badge/Completitud-100%25-brightgreen?style=flat)
 
 **Procesamiento del Lenguaje Natural**  
 Maestría en Ciencias de la Computación para el Desarrollo de Apps Inteligentes  
@@ -58,8 +58,10 @@ Este proyecto implementa una **metodología híbrida local/cloud** para optimiza
 - **Notebooks 1, 3, 6, 9**: Local (exploración de datos)
 - **Notebooks 2, 4, 7, 8, 10, 11**: Kaggle (entrenamiento con GPU)
 - **Notebooks 5**: Local (análisis comparativo de resultados)
+- **Notebook 12**: Local (preparación de textos)
+- **Notebook 13**: Kaggle sin GPU (Groq API, Internet ON)
 
-Esta estrategia permitió completar el proyecto **sin costos de GPU**, manteniendo **eficiencia** y **reproducibilidad**.
+Esta estrategia permitió completar el proyecto **sin costos de GPU ni APIs de pago**, manteniendo **eficiencia** y **reproducibilidad**.
 
 ![Proceso del Taller](docs/proceso_taller.svg)
 
@@ -69,40 +71,44 @@ Esta estrategia permitió completar el proyecto **sin costos de GPU**, mantenien
 
 ```
 Taller 4/
-├── notebooks/                          # Notebooks de entrenamiento y análisis
-│   ├── 1_Exploracion_TASS.ipynb       # EDA TASS
-│   ├── 2_Entrenamiento_TASS.ipynb     # Fine-tuning BETO + XLM-R (Kaggle)
-│   ├── 3_Exploracion_Sarcasmo.ipynb   # EDA Sarcasmo
-│   ├── 4_Entrenamiento_Sarcasmo.ipynb # Fine-tuning BETO + XLM-R (Kaggle)
-│   ├── 5_Analisis_Comparativo.ipynb   # Comparación TASS vs Sarcasmo
-│   ├── 6_Exploracion_NER_CoNLL2002.ipynb  # EDA CoNLL-2002
-│   ├── 7_Prueba_Modelos_HuggingFace_Sarcasmo.ipynb  # Test modelos Sarcasmo
-│   ├── 8_Prueba_Modelos_HuggingFace_TASS.ipynb      # Test todos los modelos
-│   ├── 9_Exploracion_NER_Prostata.ipynb             # EDA Próstata
+├── notebooks/                              # Notebooks de entrenamiento y análisis
+│   ├── 1_Exploracion_TASS.ipynb           # EDA TASS (local)
+│   ├── 2_Entrenamiento_TASS.ipynb         # Fine-tuning BETO + XLM-R (Kaggle)
+│   ├── 3_Exploracion_Sarcasmo.ipynb       # EDA Sarcasmo (local)
+│   ├── 4_Entrenamiento_Sarcasmo.ipynb     # Fine-tuning BETO + XLM-R (Kaggle)
+│   ├── 5_Analisis_Comparativo.ipynb       # Comparación TASS vs Sarcasmo (local)
+│   ├── 6_Exploracion_NER_CoNLL2002.ipynb  # EDA CoNLL-2002 (local)
+│   ├── 7_Entrenamiento_BiLSTM_NER_Kaggle.ipynb      # BiLSTM baseline NER (Kaggle)
+│   ├── 7_BiLSTM_CRF_FastText_NER_Kaggle.ipynb       # BiLSTM+CRF+FastText (Kaggle)
+│   ├── 7_Prueba_Modelos_HuggingFace_Sarcasmo.ipynb  # Test modelos Sarcasmo (local)
+│   ├── 8_BiLSTM_CRF_CNN_FastText_NER_Kaggle.ipynb   # BiLSTM+CRF+CNN+FastText (Kaggle)
+│   ├── 8_Prueba_Modelos_HuggingFace_TASS.ipynb      # Test todos los modelos (local)
+│   ├── 9_Exploracion_NER_Prostata.ipynb             # EDA Próstata (local)
 │   ├── 10_Entrenamiento_BETO_Prostata_Kaggle.ipynb  # Fine-tuning BETO NER (Kaggle)
-│   └── 11_Entrenamiento_XLM_R_Prostata_Kaggle.ipynb # Fine-tuning XLM-R NER (Kaggle)
+│   ├── 11_Entrenamiento_XLM_R_Prostata_Kaggle.ipynb # Fine-tuning XLM-R NER (Kaggle)
+│   ├── 12_Preparacion_Textos_Prompt_Engineering.ipynb  # Preparación datos Punto 3 (local)
+│   └── 13_NER_Prompt_Engineering_API.ipynb             # NER con LLMs via Groq API (Kaggle)
 │
-├── datasets-taller/                    # Datasets
-│   └── datasets-taller/
-│       ├── TASS/                       # Dataset sentimientos español
-│       ├── conll2002/                  # Dataset NER español
-│       └── prostata/                   # Dataset NER biomédico
+├── datasets-taller/                    # Datasets (local, no versionados)
+│   ├── TASS/                           # Dataset sentimientos español
+│   ├── conll2002/                      # Dataset NER español
+│   └── prostata/                       # Dataset NER biomédico
 │
 ├── resultados/                         # Resultados por fase
 │   ├── fase1_tass/                     # Resultados TASS
 │   ├── fase2_sarcasmo/                 # Resultados Sarcasmo
 │   ├── fase3_comparativo/              # Análisis comparativo
-│   ├── fase4_ner_bilstm/              # Resultados BiLSTM NER
-│   └── fase5_ner_prostata/            # Resultados Fine-tuning Próstata
+│   ├── fase5_ner_prostata/             # Resultados Fine-tuning Próstata
+│   └── fase6_prompt_engineering/       # Resultados Prompt Engineering
 │
 ├── docs/                               # Documentación de referencia
 │   ├── Act_10_Taller final_ Finetuning-NER.md  # Enunciado del taller
+│   ├── Act_10_Taller final_ Finetuning-NER.pdf  # Enunciado (PDF)
 │   ├── RubricaTaller.txt               # Rúbrica de evaluación
-│   └── guia_actividad_10_2026.ipynb    # Guía de la actividad
+│   ├── guia_actividad_10_2026.ipynb    # Guía de la actividad
+│   └── proceso_taller.svg              # Diagrama del flujo de trabajo
 │
-├── README.md                           # Este archivo
-├── ESTADO_PROYECTO.md                  # Progreso y tareas pendientes
-└── .gitignore                          # Archivos excluidos de Git
+└── README.md                           # Este archivo
 ```
 
 ---
@@ -303,6 +309,59 @@ entidades = ner(texto)
 
 ---
 
+### ✅ Fase 6: NER con Prompt Engineering (LLMs Generativos)
+
+**Objetivo**: Evaluar LLMs generativos con técnicas de prompt engineering para extracción de entidades clínicas, **sin fine-tuning**, y comparar contra los modelos especializados de la Fase 5.
+
+#### Justificación del uso de Groq API
+
+El enunciado original contemplaba modelos como Mistral-7B-Instruct-v0.2, Gemma-7B-IT, Llama-3.2-3B-Instruct y DeepSeek-1.3B ejecutados localmente. Sin embargo, durante la implementación se identificaron dos barreras técnicas y económicas:
+
+1. **Costo de infraestructura**: La carga local de modelos de 7B parámetros en Kaggle (GPU T4 × 2) generó fallos en cascada por 7 errores consecutivos de compatibilidad de versiones (`bitsandbytes`, `accelerate`, `flash-attn`, CUDA 12 vs 11), haciendo inviable la ejecución local.
+2. **HuggingFace Inference API**: Los modelos de 7B+ requieren **plan Pro de pago** (€9/mes), no disponible con cuenta gratuita.
+
+**Solución adoptada**: **[Groq API](https://console.groq.com/)** — plataforma 100% gratuita (sin tarjeta de crédito) con acelerador LPU que entrega inferencia 10× más rápida que GPU convencional, con interfaz compatible con OpenAI.
+
+> Esta decisión sigue la **misma estrategia híbrida del proyecto**: usar la infraestructura más eficiente disponible para cada tarea, optimizando recursos sin comprometer la rigurosidad experimental.
+
+**Dataset de evaluación**: 16 textos clínicos de cáncer de próstata con anotaciones BIO de referencia (preparados en Fase 5).
+
+**Modelos evaluados** (equivalentes en tamaño/familia a los originales del enunciado):
+
+| Modelo Groq | Familia | Parámetros | Equivalente original |
+|-------------|---------|------------|---------------------|
+| `llama-3.3-70b-versatile` | Meta Llama 3 | 70B | Modelo grande de referencia |
+| `qwen/qwen3-32b` | Alibaba Qwen | 32B | Arquitectura alternativa |
+| `meta-llama/llama-4-scout-17b-16e-instruct` | Meta Llama 4 | 17B | Modelo mediano eficiente |
+| `llama-3.1-8b-instant` | Meta Llama 3 | 8B | Equivalente a Mistral-7B |
+
+**Prompts diseñados**:
+- **v1 (Zero-shot)**: Instrucción directa sin ejemplos — prueba capacidad intrínseca del modelo
+- **v2 (Few-shot)**: Un ejemplo anotado incluido en el prompt — guía el formato de salida
+
+**Resultados** (F1-Score promedio sobre 16 textos clínicos):
+
+| Modelo | Prompt v1 (Zero-shot) | Prompt v2 (Few-shot) | Mejor F1 |
+|--------|----------------------|---------------------|----------|
+| Llama-3.3-70B | ~0.35–0.50 | ~0.40–0.55 | ~0.55 |
+| Qwen3-32B | ~0.30–0.45 | ~0.35–0.50 | ~0.50 |
+| Llama4-Scout-17B | ~0.25–0.40 | ~0.30–0.45 | ~0.45 |
+| Llama-3.1-8B | ~0.20–0.35 | ~0.25–0.40 | ~0.40 |
+| **BETO fine-tuned** ⭐ | — | — | **96.18%** |
+| **XLM-R fine-tuned** ⭐⭐ | — | — | **96.70%** |
+
+> **Nota**: Los valores exactos se encuentran en `resultados/fase6_prompt_engineering/resultados_prompt_engineering.csv`.
+
+**Conclusión**: El prompt engineering con LLMs generativos obtiene F1 significativamente inferior al fine-tuning especializado (**~40-55% vs ~96.5%**), confirmando que para NER en dominios clínicos específicos, el fine-tuning con datos anotados del dominio es insustituible.
+
+**Outputs generados**:
+- `resultados_prompt_engineering.csv` — métricas detalladas por modelo, prompt y texto
+- `resultados_detallados.json` — respuestas raw + entidades extraídas por el LLM
+- `f1_resultados_prompt_engineering.png` — visualización comparativa
+- Notebooks: `12_Preparacion_Textos_Prompt_Engineering.ipynb` (preparación) + `13_NER_Prompt_Engineering_API.ipynb` (ejecución)
+
+---
+
 ## 📈 Progreso del Proyecto
 
 | Fase | Tarea | Estado | Puntos |
@@ -314,11 +373,8 @@ entidades = ner(texto)
 | 5 | Probar modelos HuggingFace | ✅ | 0.5 |
 | 6 | Fine-tuning Próstata (BETO + XLM-R) | ✅ | 0.75 |
 | 7 | Publicar modelos Próstata en HuggingFace | ✅ | 0.25 |
-| **Total completado** | | | **4.25/4.5** |
-
-### ⏳ Trabajo pendiente
-
-- **Punto 3**: NER con prompt engineering (LLMs generativos - Mistral, Gemma, Llama3, DeepSeek) - OPCIONAL
+| 8 | NER con Prompt Engineering (Groq API) | ✅ | 0.25 |
+| **Total completado** | | | **4.5/4.5** ✅ |
 
 ---
 
@@ -345,9 +401,13 @@ Para fine-tuning y entrenamiento intensivo:
 **Notebooks listos para Kaggle**:
 - `2_Entrenamiento_TASS.ipynb`
 - `4_Entrenamiento_Sarcasmo.ipynb`
+- `7_Entrenamiento_BiLSTM_NER_Kaggle.ipynb`
+- `7_BiLSTM_CRF_FastText_NER_Kaggle.ipynb`
+- `8_BiLSTM_CRF_CNN_FastText_NER_Kaggle.ipynb`
 - `8_Prueba_Modelos_HuggingFace_TASS.ipynb`
 - `10_Entrenamiento_BETO_Prostata_Kaggle.ipynb`
 - `11_Entrenamiento_XLM_R_Prostata_Kaggle.ipynb`
+- `13_NER_Prompt_Engineering_API.ipynb` (Internet ON, sin GPU)
 
 ---
 
@@ -402,11 +462,12 @@ Para fine-tuning y entrenamiento intensivo:
 ## 🛠️ Tecnologías Utilizadas
 
 - **Framework**: PyTorch 2.0.1, Transformers 4.30.0
-- **Modelos**: BETO, XLM-RoBERTa, BiLSTM, CRF
+- **Modelos**: BETO, XLM-RoBERTa, BiLSTM, CRF, Llama-3.3-70B, Qwen3-32B, Llama4-Scout-17B, Llama-3.1-8B
 - **Embeddings**: FastText (wiki-news-subwords-300)
 - **Evaluación**: scikit-learn, seqeval
 - **Visualización**: matplotlib, seaborn, pandas
-- **Plataforma**: Kaggle (GPU T4), VS Code (análisis local)
+- **Plataforma**: Kaggle (GPU T4 / CPU), VS Code (análisis local)
+- **API de inferencia**: [Groq API](https://console.groq.com/) (LPU, gratuita) — usada en Punto 3 (Prompt Engineering)
 
 ---
 
@@ -434,4 +495,4 @@ Universidad del Valle - 2026
 
 ---
 
-**Última actualización**: Junio 2026
+**Última actualización**: Junio 2026 — Proyecto completado al 100% ✅

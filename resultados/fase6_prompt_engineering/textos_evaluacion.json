@@ -1,0 +1,480 @@
+[
+  {
+    "texto_id": 0,
+    "origen": "enunciado",
+    "texto": "Paciente masculino de 72 años con antecedentes médicos de hipertensión arterial (HTA).  Actualmente presenta un tumor prostático bilateral confirmado mediante biopsia. El diagnóstico histológico  reveló un adenocarcinoma de próstata. El puntaje de Gleason reportado fue 3+3, lo que indica un cáncer de  bajo grado. El PSA más alto registrado en la historia clínica fue de 9,9 ng/dL. La resonancia magnética no  evidenció lesiones metastásicas ni afectación de la cápsula prostática. Las vesículas seminales se observaron  normales en las imágenes por resonancia. No se detectaron adenopatías ni lesiones óseas sospechosas. La  gammagrafía ósea fue negativa para metástasis. El cuadro clínico sugiere una neoplasia localizada de bajo riesgo.",
+    "entidades": {
+      "EDAD": [
+        "72 años"
+      ],
+      "SEXO": [
+        "masculino"
+      ],
+      "ANTECEDENTES": [
+        "hipertensión arterial",
+        "HTA"
+      ],
+      "CANCER": [
+        "tumor prostático bilateral",
+        "adenocarcinoma de próstata",
+        "cáncer de bajo grado",
+        "neoplasia localizada de bajo riesgo"
+      ],
+      "GLEASON": [
+        "Gleason 3+3"
+      ],
+      "BIOMARCADOR": [
+        "PSA 9,9 ng/dL"
+      ],
+      "DIAGNOSTICO": [
+        "diagnóstico histológico"
+      ],
+      "CIRUGIA": [
+        "biopsia"
+      ],
+      "EXAMENES": [
+        "resonancia magnética",
+        "imágenes por resonancia",
+        "gammagrafía ósea"
+      ],
+      "HALLAZGOS": [
+        "vesículas seminales normales",
+        "no lesiones metastásicas",
+        "no adenopatías",
+        "no lesiones óseas",
+        "negativa para metástasis"
+      ]
+    }
+  },
+  {
+    "texto_id": 1,
+    "origen": "dataset_prostata",
+    "texto": "Abril 8 de 2022 , paciente con Tumor maligno de la próstata , con diagnostico de Adenocarcinoma de próstata , Gleason 3+4 3 + 4 estadio IIa ct2nxm0 dx en el año 2018 psa de 11 psa a 5.03 ng/ ml , con manejo hormonal inicial triptorelina y leuprolide extrainstitucional hasta octubre de 2021 2021 , con recaída bioquímica posterior .",
+    "entidades": {
+      "fecha": [
+        "Abril 8 de 2022",
+        "2018",
+        "octubre de 2021",
+        "2021"
+      ],
+      "tipo_cancer": [
+        "Tumor maligno de la próstata",
+        "Adenocarcinoma de próstata",
+        "recaída bioquímica"
+      ],
+      "biomarcadores": [
+        "Gleason 3+4",
+        "ct2nxm0",
+        "psa de 11",
+        "psa a 5.03 ng/ ml"
+      ],
+      "tratamiento": [
+        "manejo hormonal"
+      ],
+      "medicacion": [
+        "triptorelina",
+        "leuprolide"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 61,
+      "num_entity_types": 7
+    }
+  },
+  {
+    "texto_id": 2,
+    "origen": "dataset_prostata",
+    "texto": "Abril 8 de 2022 , paciente con Tumor maligno de la próstata , con diagnostico de Adenocarcinoma de próstata , Gleason 3+4 3 + 4 estadio IIa ct2nxm0 dx en el año 2018 psa de 11 psa a 5.03 ng/ ml inicial psa de 11 psa a 5.03 ng/ ml con manejo hormonal inicial triptorelina y leuprolide extrainstitucional hasta octubre de 2021 , con recaída bioquímica posterior .",
+    "entidades": {
+      "fecha": [
+        "Abril 8 de 2022",
+        "2018",
+        "octubre de 2021"
+      ],
+      "tipo_cancer": [
+        "Tumor maligno de la próstata",
+        "Adenocarcinoma de próstata",
+        "recaída bioquímica"
+      ],
+      "biomarcadores": [
+        "Gleason 3+4",
+        "ct2nxm0",
+        "psa de 11",
+        "psa a 5.03 ng/ ml",
+        "psa de 11",
+        "psa a 5.03 ng/ ml"
+      ],
+      "tratamiento": [
+        "manejo hormonal"
+      ],
+      "medicacion": [
+        "triptorelina",
+        "leuprolide"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 68,
+      "num_entity_types": 7
+    }
+  },
+  {
+    "texto_id": 3,
+    "origen": "dataset_prostata",
+    "texto": "Paciente con dx de Adenocarcinoma de próstata , Gleason 3+4 3 + 4 , ct2nxm0 quien completo tratamiento con radioterapia IMRT a ptv pelvis - próstata dosis 7800cgy ( 5600cgy - 2200cgy ) iniciados en marzo 14 de 2023 marzo 6 de 2024 y finalizados en mayo 11 de 2023 .",
+    "entidades": {
+      "tipo_cancer": [
+        "Adenocarcinoma de próstata"
+      ],
+      "biomarcadores": [
+        "Gleason 3+4",
+        "ct2nxm0"
+      ],
+      "tratamiento": [
+        "radioterapia IMRT"
+      ],
+      "medicacion": [
+        "7800cgy",
+        "5600cgy",
+        "2200cgy"
+      ],
+      "fecha": [
+        "marzo 14 de 2023",
+        "marzo 6 de 2024",
+        "mayo 11 de 2023"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 51,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 4,
+    "origen": "dataset_prostata",
+    "texto": "Valorado por oncología quien clasifica como paciente con adenocarcinoma de próstata , Gleason 4+4, G4 4 ciclos + 4 ciclos , G4 , cT4N0Mx , Estadio IIIB , solicita TAC de tórax y abdomen , pauta bloqueo hormonal con goserelina , 4 ciclos de quimioterapia con docetaxel y solicita valoración por oncología radioterápica .",
+    "entidades": {
+      "tipo_cancer": [
+        "adenocarcinoma de próstata"
+      ],
+      "biomarcadores": [
+        "Gleason 4+4, G4",
+        "cT4N0Mx"
+      ],
+      "medicacion": [
+        "4 ciclos",
+        "4 ciclos",
+        "4 ciclos",
+        "goserelina",
+        "docetaxel"
+      ],
+      "tratamiento": [
+        "bloqueo hormonal",
+        "quimioterapia"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 54,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 5,
+    "origen": "dataset_prostata",
+    "texto": "Por parte de oncología radioterápica nos encontramos con un paciente de 20 años , con múltiples morbilidades , con cáncer de próstata, tipo adenocarcinoma , Gleason score 4+3 4 + 3 , PSA 29 ng/ml PSA ng / ml , cT1c ( tumor localizado por biopsia , no aporta reporte de RMN de próstata original ) cN0 ( RMN de pelvis no describe adenopatías – no aporta informe original ) M1b ( lesión blástica en el cuerpo vertebral L2 sospechosa de metástasis - fractura por aplastamiento de L1 ) , ISUP 3 , grupo de alto riesgo DINAMICO , grupo de alto riesgo NCCN , oligometastasico con baja carga tumoral , que se beneficia de tratamiento con RT tipo IMRT sobre próstata + áreas ganglionares .",
+    "entidades": {
+      "edad": [
+        "20 años"
+      ],
+      "tipo_cancer": [
+        "cáncer de próstata, tipo adenocarcinoma",
+        "metástasis",
+        "oligometastasico"
+      ],
+      "biomarcadores": [
+        "Gleason score 4+3",
+        "ISUP 3",
+        "PSA 29 ng/ml",
+        "PSA",
+        "cT1c",
+        "cN0",
+        "M1b"
+      ],
+      "tratamiento": [
+        "RT tipo IMRT"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 126,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 6,
+    "origen": "dataset_prostata",
+    "texto": "Valorada por urología oncología quien programa para prostatectomía + linfadenectomía en 2014 con patología quirúrgica de adenocarcinoma , Gleason 3+5 3 fracciones 3 fracciones de 10 Gy + 5 , compromiso del 50% del lóbulo izquierdo y 20% del lóbulo derecho , en contacto con la cápsula , ILPN - , vesículas y márgenes negativos , PT3apN0Mx .",
+    "entidades": {
+      "cirugias": [
+        "prostatectomía",
+        "linfadenectomía"
+      ],
+      "fecha": [
+        "2014"
+      ],
+      "tipo_cancer": [
+        "adenocarcinoma"
+      ],
+      "biomarcadores": [
+        "Gleason 3+5",
+        "PT3apN0Mx"
+      ],
+      "medicacion": [
+        "3 fracciones",
+        "3 fracciones de 10 Gy"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 58,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 7,
+    "origen": "dataset_prostata",
+    "texto": "Paciente de 78 años remitido con dx de adenocarcinoma de próstata , Gleason 4+3 4 + 3 , ct1cnxm0 , PSA : inicial con valor de 7,10 ng / ml , diagnostico en febrero de 2019 .",
+    "entidades": {
+      "edad": [
+        "78 años"
+      ],
+      "tipo_cancer": [
+        "adenocarcinoma de próstata"
+      ],
+      "biomarcadores": [
+        "Gleason 4+3",
+        "ct1cnxm0",
+        "PSA"
+      ],
+      "fecha": [
+        "febrero de 2019"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 37,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 8,
+    "origen": "dataset_prostata",
+    "texto": "Paciente de 78 años remitido con dx de adenocarcinoma de próstata , Gleason 4+3 4 + 3 , ct1cnxm0 , psa con valor de 0.01 ng/ ml : inicial con valor de 7,10 ng / ml , diagnostico en febrero de 2019 .",
+    "entidades": {
+      "edad": [
+        "78 años"
+      ],
+      "tipo_cancer": [
+        "adenocarcinoma de próstata"
+      ],
+      "biomarcadores": [
+        "Gleason 4+3",
+        "ct1cnxm0",
+        "psa con valor de 0.01 ng/ ml"
+      ],
+      "fecha": [
+        "febrero de 2019"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 43,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 9,
+    "origen": "dataset_prostata",
+    "texto": "Abril 4 de 2018 , paciente masculino de 70 años con DX de CA de próstata t1nxm0 alto riesgo por PSA para tratamiento con radioterapia imrt y bloqueo hormonal el dx se sospecho cuando el año anterior se solicito PSA : 19 .",
+    "entidades": {
+      "fecha": [
+        "Abril 4 de 2018"
+      ],
+      "edad": [
+        "70 años"
+      ],
+      "tipo_cancer": [
+        "CA de próstata"
+      ],
+      "biomarcadores": [
+        "t1nxm0",
+        "PSA"
+      ],
+      "tratamiento": [
+        "radioterapia imrt",
+        "bloqueo hormonal"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 43,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 10,
+    "origen": "dataset_prostata",
+    "texto": "Paciente a consulta ( junio 18 de 2024 ) de 68 años con dx de ca de próstata ; ct2nxm1 Gleason 5+4 , PSA inicial de 45 ng/ ml en el año 2021 .",
+    "entidades": {
+      "fecha": [
+        "junio 18 de 2024",
+        "2021"
+      ],
+      "edad": [
+        "68 años"
+      ],
+      "tipo_cancer": [
+        "ca de próstata"
+      ],
+      "biomarcadores": [
+        "ct2nxm1",
+        "Gleason 5+4",
+        "PSA inicial de 45 ng/ ml"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 34,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 11,
+    "origen": "dataset_prostata",
+    "texto": "Paciente a consulta ( junio 18 de 2024 ) de 68 años con dx de ca de próstata , ct2nxm1 Gleason 5+4 5 + 4 PSA inicial de 45 ng/ ml dx en el año 2021 .",
+    "entidades": {
+      "fecha": [
+        "junio 18 de 2024",
+        "2021"
+      ],
+      "edad": [
+        "68 años"
+      ],
+      "tipo_cancer": [
+        "ca de próstata"
+      ],
+      "biomarcadores": [
+        "ct2nxm1",
+        "Gleason 5+4",
+        "PSA inicial de 45 ng/ ml"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 37,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 12,
+    "origen": "dataset_prostata",
+    "texto": "Abril 4 de 2018 , paciente masculino de 70 años con DX de CA de próstata t1nxm0 alto riesgo por PSA para tratamiento con radioterapia imrt y bloqueo hormonal el dx se sospecho cuando el año anterior se solicito PSA : 19 .",
+    "entidades": {
+      "fecha": [
+        "Abril 4 de 2018"
+      ],
+      "edad": [
+        "70 años"
+      ],
+      "tipo_cancer": [
+        "CA de próstata"
+      ],
+      "biomarcadores": [
+        "t1nxm0",
+        "PSA"
+      ],
+      "tratamiento": [
+        "radioterapia imrt",
+        "bloqueo hormonal"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 43,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 13,
+    "origen": "dataset_prostata",
+    "texto": "Paciente con dx adenocarcinoma de próstata - Gleason 3+4 3 + 4 – ct2cn0m0 - ipsa : 11,7 ng / ml quien completo tratamiento con radioterapia imrt a ptv pelvis protocolo chhip dosis total 60gy iniciados en septiembre 14 de 2023 y finalizados en octubre 12 de 2023 .",
+    "entidades": {
+      "tipo_cancer": [
+        "adenocarcinoma de próstata"
+      ],
+      "biomarcadores": [
+        "Gleason 3+4",
+        "ct2cn0m0"
+      ],
+      "tratamiento": [
+        "radioterapia imrt"
+      ],
+      "medicacion": [
+        "60gy"
+      ],
+      "fecha": [
+        "septiembre 14 de 2023",
+        "octubre 12 de 2023"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 49,
+      "num_entity_types": 6
+    }
+  },
+  {
+    "texto_id": 14,
+    "origen": "dataset_prostata",
+    "texto": "Paciente remitido con dx de ca de próstata pt1nxmx en estadificación para tratamiento con radioterapia el dx se sospecho cuando el julio del 2017 inicia con retención urinaria y disminución del calibre del chorro urinario por lo que requirió rtu realizada en julio 25 del 2017 .",
+    "entidades": {
+      "tipo_cancer": [
+        "ca de próstata"
+      ],
+      "biomarcadores": [
+        "pt1nxmx"
+      ],
+      "tratamiento": [
+        "radioterapia"
+      ],
+      "fecha": [
+        "julio del 2017",
+        "julio 25 del 2017"
+      ],
+      "cirugias": [
+        "rtu"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 47,
+      "num_entity_types": 5
+    }
+  },
+  {
+    "texto_id": 15,
+    "origen": "dataset_prostata",
+    "texto": "17 mayo del 2023 ingresa paciente de 76 años con adenocarcinoma de próstata Gleason 4+5 g5 Gleason 4+5 g5 4 + 5 g5 ct4n1m1 , estadio ivb ( metastásico de alto volumen metastásico de alto volumen y riesgo alto ) .",
+    "entidades": {
+      "fecha": [
+        "17 mayo del 2023"
+      ],
+      "edad": [
+        "76 años"
+      ],
+      "tipo_cancer": [
+        "adenocarcinoma de próstata",
+        "metastásico de alto volumen",
+        "metastásico de alto volumen"
+      ],
+      "biomarcadores": [
+        "Gleason 4+5 g5",
+        "Gleason 4+5 g5",
+        "ct4n1m1"
+      ]
+    },
+    "metadata": {
+      "num_tokens": 41,
+      "num_entity_types": 5
+    }
+  }
+]
