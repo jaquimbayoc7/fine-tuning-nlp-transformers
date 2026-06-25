@@ -1,9 +1,19 @@
 # Fine-tuning NER y Clasificación de Texto con LLMs
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/jaquimbayoc7/fine-tuning-nlp-transformers)
+[![HuggingFace](https://img.shields.io/badge/🤗-6_Models-FFD21E?style=flat)](https://huggingface.co/Lucyan85)
+[![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Transformers](https://img.shields.io/badge/Transformers-4.30.0-FFD21E?style=flat)](https://huggingface.co/docs/transformers)
+[![License](https://img.shields.io/badge/License-Academic-blue?style=flat)](LICENSE)
+[![Completitud](https://img.shields.io/badge/Completitud-94.4%25-success?style=flat)](ESTADO_PROYECTO.md)
+
 **Procesamiento del Lenguaje Natural**  
 Maestría Virtual en Ingeniería de Sistemas y Computación  
-Universidad del Valle - 2026
+Universidad del Valle - 2026  
 Ing. Julian Andres Quimbayo Castro
+
+📂 **Repositorio**: [github.com/jaquimbayoc7/fine-tuning-nlp-transformers](https://github.com/jaquimbayoc7/fine-tuning-nlp-transformers)
 
 ---
 
